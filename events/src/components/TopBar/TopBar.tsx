@@ -117,12 +117,9 @@ export const TopBar = ({
       testID="TopBar"
     >
       <Space style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 16 }}>
-        <Pill
-          size="l"
-          style={{ minWidth: 122, height: 30, borderRadius: 6, backgroundColor: getColor('grey.800') }}
-          text="Logo"
-          testID="Logo"
-        />
+        <div>
+          <img src='/Oppif-Logo-Transparent-B.png' alt='oppif' />
+        </div>
         <Text type="h6" color="white" testID="MeetingName">
           {getFriendlyName(eventName ?? conference?.alias ?? '')}
         </Text>
