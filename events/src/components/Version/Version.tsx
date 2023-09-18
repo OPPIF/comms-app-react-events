@@ -17,7 +17,7 @@ export const Version = () => {
         values={{ v: packageJson.version }}
       />
       <Space className={styles.spacer} />
-      <Text testID="SDK" type="captionSmallRegular" color="grey.300" labelKey="sdk" values={{ v: getSDKVersion() }} />
+{/*       <Text testID="SDK" type="captionSmallRegular" color="grey.300" labelKey="sdk" values={{ v: getSDKVersion() }} /> */}
     </Space>
   );
 };
