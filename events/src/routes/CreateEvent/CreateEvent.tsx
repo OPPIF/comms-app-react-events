@@ -93,7 +93,7 @@ const CreateEventForm = ({
           validation={meetingValidation}
         />
         <Space p="s" />
-        <Button testID="Next" css={{ width: '100%' }} type="submit">
+        <Button testID="Next" css={{ width: '100%', backgroundColor: "#F1B635" }} type="submit">
           Next
         </Button>
       </form>
