@@ -27,3 +27,7 @@ html {
   background-color: var(--colors-black);
   height: 100%;
 }
+
+input[type=text]:focus {
+  border-color: "#F1B635 !important"
+}
