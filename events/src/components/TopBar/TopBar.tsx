@@ -148,7 +148,7 @@ export const TopBar = ({
               </Text>
             </>
           )}
-          {joinType === 'host' && (
+{/*           {joinType === 'host' && (
             <>
               <div id="recordButton">
                 <RecordButton
@@ -176,7 +176,7 @@ export const TopBar = ({
                 <Text testID="RecordingLabel" labelKey="recording" type="paragraphExtraSmall" color="#B9B9BA" />
               )}
             </>
-          )}
+          )} */}
         </Space>
         {!isMinimal && (
           <>
