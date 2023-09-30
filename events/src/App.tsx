@@ -13,6 +13,14 @@ import { Navigator } from './routes/Navigator';
 import { env } from './utils/env';
 
 const App = () => {
+    const theme = {
+    colors: {
+      purple: {
+        400: '#F1B635',
+      },
+    }
+  };
+  
   const { YOUR_TOKEN, getToken, error } = useToken();
   // Register the component name so that we can estimate the app's usage
   useEffect(() => {
@@ -39,7 +47,7 @@ const App = () => {
           refreshToken={getToken}
           packageUrlPrefix={`${window.location.origin}${import.meta.env.BASE_URL}assets/wasm/`}
         >
-          <ThemeProvider>
+          <ThemeProvider theme={theme}>
             <SideDrawerProvider>
               <div className={styles.app}>
                 <Navigator />
